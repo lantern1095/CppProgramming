@@ -4,4 +4,8 @@
 - 전처리 과정은 전처리기에 의해 수행되며, 컴파일 전에 #로 시작하는 전처리문(#include, #define 등) 의 선행 처리를 하는 과정이다. 전처리기는 내부적으로 호출되어 전처리문 문에서 지정된 헤더 파일의 텍스트를 읽고, 해당 자리에 삽입한다. 헤더 파일에 또 다른 전처리문이 포함되어 있다면, 같은 과정을 반복하게 되며 더 이상 확장할 전처리문이 없다면 전처리기는 종료된다.<br>
 
 ## 객체 cin, cout은 어디에 선언되어 있는가? 선언된 파일을 찾아서 의미를 설명하고 캡쳐하여 첨부하라
-- cin과 cout 객체는 각각 표준 입/출력을 위해 선언된 객체로, `<iostream>` 헤더 파일 내부 `std` 네임스페이스 내부에 선언되어 있다.
+- cin과 cout 객체는 각각 표준 입/출력을 위해 선언된 객체로, `<iostream>` 헤더 파일 내부 `std` 네임스페이스 내부에 선언되어 있다. 다음 사진은 `<iostream>` 내에 위치한 코드들이다.
+<img width="1617" height="107" alt="image" src="https://github.com/user-attachments/assets/6f01a5a9-1917-49db-806e-fc404269a58f" />
+<img width="1597" height="142" alt="image" src="https://github.com/user-attachments/assets/5c03dbd4-42fa-4845-9f60-8948bebae8b0" />
+
+
