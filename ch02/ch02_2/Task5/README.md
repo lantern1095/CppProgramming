@@ -9,5 +9,19 @@
 `int main()`
 - main 함수 시작
 
+
+	char text[100];
+	int i = 0;
+
+	cout << "빈칸 없이 문자열을 입력하세요>>";
+	cin.getline(text, sizeof(text), '\n');
+
+	while (text[i] != '\0') {
+		cout << text[i] << " ";
+		i++;
+	}
+
+	return 0;
+
 ## 실행 결과
 <img width="1479" height="221" alt="image" src="https://github.com/user-attachments/assets/5be209e2-8919-498d-bc35-b80398d2fec8" />
