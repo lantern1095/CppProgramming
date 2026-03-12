@@ -8,4 +8,13 @@
 <img width="1617" height="107" alt="image" src="https://github.com/user-attachments/assets/6f01a5a9-1917-49db-806e-fc404269a58f" />
 <img width="1597" height="142" alt="image" src="https://github.com/user-attachments/assets/5c03dbd4-42fa-4845-9f60-8948bebae8b0" />
 
+## 스트림이란 무엇인가?
+- 프로그램과 입출력장치 사이의 데이터 이동을 위하여 설계된 소프트웨어적인 경로이다.
+
+## 표준 출력 스트림을 정의할 때 사용하는 C언어 자료형은?
+-`stdout`이라는 이름으로 `<stdio.h>`헤더 파일 내부에 `FILE*` 자료형으로 정의되어 있다.
+
+## 표준 출력 스트림을 정의할 때 사용하는 C++언어 자료형은?
+-`cout`이라는 이름으로 `<iostream>`헤더 파일 내부 `STD`네임스페이스에 `ostream` 자료형으로 정의되어 있다.
+
 
