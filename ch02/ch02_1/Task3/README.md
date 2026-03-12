@@ -10,13 +10,16 @@
 - main 함수 시작<br>
 
 `cout << "군산대학교 \"홍길동\"\n";`
-- cout
+- cout 객체를 사용하여 문장을 출력한다. `\"` 으로 큰따옴표를 출력한다. 
 
 `cout << "\"축하합니다.\"\n";`
+- cout 객체를 사용하여 문장을 출력한다. `\"` 으로 큰따옴표를 출력한다. 
 
 `cout << "100% \\취업율\\";`
+- cout 객체를 사용하여 문장을 출력한다. `\\` 으로 \을 출력한다.
 
-	return 0;
+`return 0;`
+- 0을 반환하고 메인함수를 종료한다.
 
 ## 실행 결과
 <img width="1474" height="309" alt="image" src="https://github.com/user-attachments/assets/cb8cefe9-cdda-45b5-8c39-1dd005344301" />
