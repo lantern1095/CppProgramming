@@ -1,0 +1,31 @@
+// **********************************************
+// 제 목 : 학번,이름,주소를 입력받아 출력하는 프로그램
+// 날 짜 : 2026년 3월11일
+// 작성자 : 2301377 김예찬
+// **********************************************
+
+#include <iostream>
+
+using namespace std;
+int main() {
+	char num[10];
+	char name[10];
+	char add[50];
+
+	cout << "학번을 입력하시오 : ";
+	cin >> num;
+
+	cout << "이름을 입력하시오 : ";
+	cin >> name;
+	cin.ignore();
+
+	cout << "주소를 입력하시오 : ";
+	cin.getline(add, sizeof(add), '\n');
+
+	cout << "\n\n\n1.학번 : " << num << "\n";
+	cout << "2.이름 : " << name << "\n";
+	cout << "3.주소 : " << add;
+
+
+	return 0;
+}
