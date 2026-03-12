@@ -33,5 +33,8 @@
 `cout << "양수 합은 " << sum << "입니다.";`
 - cout 객체를 사용하여 sum의 결과를 출력한다.
 
+`return 0;`
+- 0을 반환하고 메인 함수를 종료한다.
+
 ## 실행 결과
 <img width="1481" height="225" alt="image" src="https://github.com/user-attachments/assets/d7fa902a-e6e3-4fca-b780-64c22f5eaa64" />
