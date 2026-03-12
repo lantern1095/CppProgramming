@@ -10,18 +10,20 @@
 - main 함수 시작
 
 
-	char text[100];
-	int i = 0;
+`char text[100];`
+- 문자형 배열 text를 선언한다.
+`int i = 0;`
+- 정수형 변수 i를 선언하고 0으로 초기화한다.
+`cout << "빈칸 없이 문자열을 입력하세요>>";`
+- cout 객체를 사용하여 문자열 입력을 알리는 문장을 화면에 출력한다.
+`cin.getline(text, sizeof(text), '\n');`
+- c
+`while (text[i] != '\0') {`
+`cout << text[i] << " ";`
+`i++;`
 
-	cout << "빈칸 없이 문자열을 입력하세요>>";
-	cin.getline(text, sizeof(text), '\n');
-
-	while (text[i] != '\0') {
-		cout << text[i] << " ";
-		i++;
-	}
-
-	return 0;
+`return 0;`
+- 0을 반환하고 메인 함수를 종료한다.
 
 ## 실행 결과
 <img width="1479" height="221" alt="image" src="https://github.com/user-attachments/assets/5be209e2-8919-498d-bc35-b80398d2fec8" />
