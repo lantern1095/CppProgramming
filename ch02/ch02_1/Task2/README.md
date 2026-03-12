@@ -24,6 +24,6 @@
 `return 0;`
 - 0을 반환하고 메인 함수를 종료한다.
 
-  ##실행 결과
+##실행 결과
 <img width="1468" height="206" alt="image" src="https://github.com/user-attachments/assets/ab100200-eadf-4f3f-ae94-2f7ca13f31b4" />
 
