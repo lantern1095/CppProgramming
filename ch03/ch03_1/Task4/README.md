@@ -37,36 +37,52 @@
 - getArea() 함수 구현부
 
 `return width * height;`
-
+- 사각형의 면적을 계산하여 반환
 
 `int Rectangle::getPerimeter()`
-
+- getPerimeter() 함수 구현부
 
 `return (width * 2) + (height * 2);`
-
+- 사각형의 둘레길이를 계산하여 반환
 
 `void Rectangle::getBottomRight()`
-
+- getBottomRight() 함수 구현부
 
 `Bx = x + width;`
-
+- x + width의 값을 Bx에 저장
 
 `By = y - height;`
-
+- y - height의 값을 By에 저장
 
 `int main()`
 - main 함수 시작
 
-	Rectangle rect;
-	rect.width = 3;
-	rect.height = 4;
-	rect.x = 1;
-	rect.y = 2;
+`Rectangle rect;`
+- Rectangle 클래스의 객체 rect 생성
 
-	rect.getBottomRight();
-	cout << "사각형의 면적은 " << rect.getArea() << endl;
-	cout << "사각형의 둘레길이는 " << rect.getPerimeter() << endl;
-	cout << "사각형의 우측하단의 좌표는 " << rect.Bx << " , " << rect.By << endl;
+`rect.width = 3;`
+- rect 멤버변수 width에 3 저장
+
+`rect.height = 4;`
+- rect 멤버변수 height에 4 저장
+
+`rect.x = 1;`
+- rect 멤버변수 x에 1 저장
+
+`rect.y = 2;`
+- rect 멤버변수 y에 2 저장
+
+`rect.getBottomRight();`
+- rect 멤버함수 getBottomRight() 호출
+
+`cout << "사각형의 면적은 " << rect.getArea() << endl;`
+- 사각형의 면적 출력
+
+`cout << "사각형의 둘레길이는 " << rect.getPerimeter() << endl;`
+- 사각형의 둘레길이 출력
+
+`cout << "사각형의 우측하단의 좌표는 " << rect.Bx << " , " << rect.By << endl;`
+- 사각형의 우하단 좌표 출력
 
 `return 0;`
 - 0을 반환하고 메인 함수를 종료한다.
