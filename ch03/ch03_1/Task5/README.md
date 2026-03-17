@@ -60,17 +60,17 @@
 `Rectangle rect;`
 - Rectangle 클래스의 객체 rect 생성
 
-`rect.width = 3;`
-- rect의 멤버변수 width에 3 저장
-
-`rect.height = 4;`
-- rect의 멤버변수 height에 4 저장
-
-`rect.x = 1;`
-- rect의 멤버변수 x에 1 저장
-
-`rect.y = 2;`
-- rect의 멤버변수 y에 2 저장
+```
+cout << "사각형의 좌측상단좌표(x,y) : ";
+cin >> rect.x >> rect.y;
+```
+- 사각형의 좌측 상단좌표를 키보드로부터 입력받아 rect.x , rect.y에 저장
+	
+```
+cout << "사각형의 폭과 높이(width,height) : ";
+cin >> rect.width >> rect.height;
+```
+- 사각형의 폭과 높이를 키보드로부터 입력받아 rect.width , rect.height에 저장
 
 `rect.getBottomRight();`
 - rect의 멤버함수 getBottomRight() 호출
