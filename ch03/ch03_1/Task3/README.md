@@ -41,7 +41,7 @@
 - Sphere 클래스의 객체 sphere 생성
 
 `sphere.radius = 5;`
-- 멤버변수 radius에 5를 저장
+- sphere의 멤버변수 radius에 5를 저장
 
 `double Volume = sphere.getVolume();`
 - 실수형 변수 Volume을 선언하고, getVolume() 함수를 호출하여 반환값을 저장
