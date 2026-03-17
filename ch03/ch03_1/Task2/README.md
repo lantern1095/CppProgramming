@@ -31,13 +31,13 @@
 - main 함수 시작
 
 `Triangle triangle;`
-- Triangle 클래스의 객체 triangle을 생성
+- Triangle의 클래스의 객체 triangle을 생성
 
 `triangle.horizontal = 3;`
-- 멤버변수 horizontal에 3을 저장
+- triangle의 멤버변수 horizontal에 3을 저장
 
 `triangle.vertical = 2;`
-- 멤버변수 vertical에 2를 저장
+- triangle의 멤버변수 vertical에 2를 저장
 
 `double area = triangle.getArea();`
 - 실수형 변수 area를 선언하고, getArea() 함수를 호출하여 반환값을 저장
