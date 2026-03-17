@@ -36,7 +36,7 @@ int main() {
 	cout << "사각형의 좌측상단좌표(x,y) : ";
 	cin >> rect.x >> rect.y;
 	
-	cout << "사각형의 좌측상단좌표(width,height) : ";
+	cout << "사각형의 폭과 높이(width,height) : ";
 	cin >> rect.width >> rect.height;
 
 	rect.getBottomRight();
