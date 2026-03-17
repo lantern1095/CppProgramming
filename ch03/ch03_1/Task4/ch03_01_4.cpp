@@ -42,5 +42,5 @@ int main() {
 	cout << "사각형의 둘레길이는 " << rect.getPerimeter() << endl;
 	cout << "사각형의 우측하단의 좌표는 " << rect.Bx << " , " << rect.By << endl;
 
-
+	return 0;
 }
