@@ -61,19 +61,19 @@
 - Rectangle 클래스의 객체 rect 생성
 
 `rect.width = 3;`
-- rect 멤버변수 width에 3 저장
+- rect의 멤버변수 width에 3 저장
 
 `rect.height = 4;`
-- rect 멤버변수 height에 4 저장
+- rect의 멤버변수 height에 4 저장
 
 `rect.x = 1;`
-- rect 멤버변수 x에 1 저장
+- rect의 멤버변수 x에 1 저장
 
 `rect.y = 2;`
-- rect 멤버변수 y에 2 저장
+- rect의 멤버변수 y에 2 저장
 
 `rect.getBottomRight();`
-- rect 멤버함수 getBottomRight() 호출
+- rect의 멤버함수 getBottomRight() 호출
 
 `cout << "사각형의 면적은 " << rect.getArea() << endl;`
 - 사각형의 면적 출력
