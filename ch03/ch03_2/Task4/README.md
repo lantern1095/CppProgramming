@@ -40,15 +40,13 @@
 `Rectangle::Rectangle(int Ix, int Iy) : Rectangle(Ix,Iy,1,1)`
 - 멤버 초기화 리스트를 이용해 매개변수 Ix, Iy를 각각 x와 y에 넣고, width와 height를 1로 초기화한다.
 
-
-`Rectangle::Rectangle(int Ix, int Iy, int w, int h) `
-
-
-`x = Ix; y = Iy;`
-
-
-`width = w; height = h;`
-
+```
+Rectangle::Rectangle(int Ix, int Iy, int w, int h) {
+	x = Ix; y = Iy;
+	width = w; height = h;
+}
+```
+- 
 
 `int Rectangle::getArea() `
 
