@@ -14,13 +14,13 @@
 - 접근지정자를 public으로 선언
 
 `Sphere();`
-- 기본 생성자 Sphere() 선언
+- 기본 생성자 선언
 
 `Sphere(int a);`
-
+- 매개변수를 하나 받는 생성자 선언
 
 `double getVolume();`
-
+- 
 
 `Sphere::Sphere() : Sphere(1)`
 
