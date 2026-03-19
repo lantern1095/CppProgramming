@@ -45,37 +45,37 @@
 
 
 `int Rectangle::getArea()`
-- 
+- getArea() 함수 구현부
 
 `return width * height;`
+- 사각형의 면적을 계산하여 반환
 
-
-`int Rectangle::getPerimeter() `
-
+`int Rectangle::getPerimeter()`
+- getPerimeter() 함수 구현부
 
 `return (width * 2) + (height * 2);`
+- 사각형의 둘레를 계산하여 반환
 
-
-`void Rectangle::getBottomRight() `
-
+`void Rectangle::getBottomRight()`
+- getBottomRight() 함수 구현부
 
 `x = x + width;`
-
+- x + width 의 값을 x에 저장
 
 `y = y - height;`
+- y - height 의 값을 y에 저장
 
-
-`int main() `
-
+`int main()`
+- 메인함수 시작
 
 `Rectangle rect1;`
-
+- Rectangle 클래스의 객체 rect1 생성, 매개변수가 없으므로 
 
 `Rectangle rect2(3, 5);`
-
+- Rectangle 클래스의 객체 rect2
 
 `Rectangle rect3(3, 5, 2, 4);`
-
+- Rectangle 클래스의 객체 rect3
 
 `rect3.getBottomRight();`
 
