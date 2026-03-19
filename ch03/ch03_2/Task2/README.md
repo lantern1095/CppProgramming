@@ -41,10 +41,10 @@
 - 메인함수 시작
 
 `Triangle tri1;`
-- 
+- triangle 클래스의 객체 tri1을 생성한다.
 
 `cout << "삼각형의 면적은 " << tri1.getArea() << endl;`
-
+- 삼각형의 면적 출력
 
 `Triangle tri2(2, 4);`
 
