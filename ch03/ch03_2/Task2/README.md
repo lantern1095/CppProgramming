@@ -5,34 +5,34 @@
 - using 지시어를 사용하여 std 네임스페이스에 선언된 이름들을 사용할 때 std::를 생략한다.
 
 `class Triangle `
-- Triangle 클래스 생성
+- Triangle 클래스 선언
 
 `int base;`
-
+- int형 멤버변수 base 선언
 
 `int height;`
-
+- int형 멤버변수 height 선언
 
 `public:`
-
+- 접근지정자를 public으로 설정
 
 `Triangle();`
-
+- 기본 생성자 선언
 
 `Triangle(int a, int b);`
-
+- int형 멤버변수 a, b를 매개변수로 하는 생성자 선언
 
 `double getArea();`
-
+- 삼각형의 넒이를 반환하는 함수 `getArea()` 선언
 
 `Triangle::Triangle() : Triangle(1,1)`
-
+- 위임 생성자로서, Triangle(1,1)을 호출한다.
 
 `Triangle::Triangle(int a, int b) : base(a), height(b)`
-
+- 멤버 초기화 리스트에서 매개변수 a, b를 각각 base와 height에 넣어 초기화한다.
 
 `double Triangle::getArea()`
-
+- 
 
 `return 0.5 * base * height;`
 
