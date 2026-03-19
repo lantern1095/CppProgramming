@@ -4,10 +4,52 @@
 `using namespace std;`
 - using 지시어를 사용하여 std 네임스페이스에 선언된 이름들을 사용할 때 std::를 생략한다.
 
+`class Triangle `
 
 
+`int base;`
 
 
+`int height;`
+
+
+`public:`
+
+
+`Triangle();`
+
+
+`Triangle(int a, int b);`
+
+
+`double getArea();`
+
+
+`Triangle::Triangle() : Triangle(1,1)`
+
+
+`Triangle::Triangle(int a, int b) : base(a), height(b)`
+
+
+`double Triangle::getArea()`
+
+
+`return 0.5 * base * height;`
+
+
+`int main() `
+
+
+`Triangle tri1;`
+
+
+`cout << "삼각형의 면적은 " << tri1.getArea() << endl;`
+
+
+`Triangle tri2(2, 4);`
+
+
+`cout << "삼각형의 면적은 " << tri2.getArea() << endl;`
 
 
 `return 0;`
