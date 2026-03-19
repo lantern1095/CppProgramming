@@ -26,7 +26,7 @@
 - 삼각형의 넒이를 반환하는 함수 `getArea()` 선언
 
 `Triangle::Triangle() : Triangle(1,1)`
-- 위임 생성자로서, Triangle(1,1)을 호출한다.
+- 위임 생성자를 이용해 Triangle(1,1) 생성자에 위임한다.
 
 `Triangle::Triangle(int a, int b) : base(a), height(b)`
 - 멤버 초기화 리스트에서 매개변수 a, b를 각각 base와 height에 넣어 초기화한다.
