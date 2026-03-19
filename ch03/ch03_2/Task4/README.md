@@ -40,16 +40,12 @@
 `Rectangle::Rectangle(int Ix, int Iy) : Rectangle(Ix,Iy,1,1)`
 - 위임 생성자를 이용해 Ix, Iy의 값만 받고, 밑변과 높이는 1로 Rectangle(int Ix, int Iy, int w, int h) 생성자에 위임해 초기화한다.
 
-```
-Rectangle::Rectangle(int Ix, int Iy, int w, int h) {
-	x = Ix; y = Iy;
-	width = w; height = h;
-}
-```
+`Rectangle::Rectangle(int Ix, int Iy, int w, int h) : x(Ix), y(Iy), width(w), height(h){}`
+- 멤버 초기화 리스트를 이용해 매개변수 Ix, Iy, w, h를 각각 x, y, width, height에 넣어 초기화한다.
+
+
+`int Rectangle::getArea()`
 - 
-
-`int Rectangle::getArea() `
-
 
 `return width * height;`
 
