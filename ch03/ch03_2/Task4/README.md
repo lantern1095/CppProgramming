@@ -35,10 +35,10 @@
 - 사각형의 우하단 좌표를 구하는 함수 getBottomRight() 선언
 
 `Rectangle::Rectangle() : Rectangle(1,1,1,1)`
-- 위임 생성자를 이용해 Rectangle(1,1,1,1) 생성자에 위임한다.
+- 위임 생성자를 이용해 Rectangle(int Ix, int Iy, int w, int h) 생성자에 위임한다.
 
 `Rectangle::Rectangle(int Ix, int Iy) : Rectangle(Ix,Iy,1,1)`
-- 멤버 초기화 리스트를 이용해 매개변수 Ix, Iy를 각각 x와 y에 넣고, width와 height를 1로 초기화한다.
+- 위임 생성자를 이용해 Ix, Iy의 값만 받고, 밑변과 높이는 1로 Rectangle(int Ix, int Iy, int w, int h) 생성자에 위임해 초기화한다.
 
 ```
 Rectangle::Rectangle(int Ix, int Iy, int w, int h) {
