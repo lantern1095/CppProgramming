@@ -26,7 +26,7 @@
 - 위임 생성자를 이용해 Sphere(1) 생성자에 위임한다.
 
 `Sphere::Sphere(int a) : radius(a)`
-- 
+- 멤버 초기화 리스트를 이용해 매개변수 a를 radius
 
 `double Sphere::getVolume() `
 
