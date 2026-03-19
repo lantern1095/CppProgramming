@@ -32,16 +32,16 @@
 - 멤버 초기화 리스트에서 매개변수 a, b를 각각 base와 height에 넣어 초기화한다.
 
 `double Triangle::getArea()`
-- 
+- getArea()함수의 구현부
 
 `return 0.5 * base * height;`
-
+- 삼각형의 면적을 계산하여 반환한다.
 
 `int main() `
-
+- 메인함수 시작
 
 `Triangle tri1;`
-
+- 
 
 `cout << "삼각형의 면적은 " << tri1.getArea() << endl;`
 
