@@ -11,16 +11,16 @@
 - 접근지정자를 public으로 설정
 
 `int width, height;`
-- 정수형 매개변수 width와 height 선언
+- int형 멤버변수 width와 height 선언
 
 `int x, y;`
-
+- int형 메머변수 x와 y 선언
 
 `Rectangle();`
-
+- 기본 생성자 선언
 
 `Rectangle(int Ix, int Iy);`
-
+- 
 
 `Rectangle(int Ix, int Iy, int w, int h);`
 
