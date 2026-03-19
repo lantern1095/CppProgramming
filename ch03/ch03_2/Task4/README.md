@@ -20,22 +20,22 @@
 - 기본 생성자 선언
 
 `Rectangle(int Ix, int Iy);`
-- 
+- int형 변수 Ix, Iy를 매개변수로 하는 생성자 선언
 
 `Rectangle(int Ix, int Iy, int w, int h);`
-
+- int형 변수 Ix, Iy, int w, int h를 매개변수로 하는 생성자 선언
 
 `int getArea();`
-
+- 사각형의 면적을 구하는 함수 getArea() 선언
 
 `int getPerimeter();`
-
+- 사각형의 둘레를 구하는 함수 getPerimeter() 선언
 
 `void getBottomRight();`
-
+- 사각형의 우하단 좌표를 구하는 함수 getBottomRight() 선언
 
 `Rectangle::Rectangle() : Rectangle(1,1,1,1)`
-
+- 
 
 `Rectangle::Rectangle(int Ix, int Iy) : Rectangle(Ix,Iy,1,1)`
 
