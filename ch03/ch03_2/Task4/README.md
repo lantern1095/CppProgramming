@@ -69,25 +69,25 @@
 - 메인함수 시작
 
 `Rectangle rect1;`
-- Rectangle 클래스의 객체 rect1 생성, 매개변수가 없으므로 
+- Rectangle 클래스의 객체 rect1를 생성, 매개변수가 없으므로 기본 생성자 호출
 
 `Rectangle rect2(3, 5);`
-- Rectangle 클래스의 객체 rect2
+- Rectangle 클래스의 객체 rect2를 생성하고 매개변수 3, 5를 이용해 x와 y를 초기화한다. width와 height는 1로 초기화된다.
 
 `Rectangle rect3(3, 5, 2, 4);`
-- Rectangle 클래스의 객체 rect3
+- Rectangle 클래스의 객체 rect3를 생성하고 매개변수 3, 5, 2, 4를 이용해 각각 x, y,width, height를 초기화한다.
 
 `rect3.getBottomRight();`
-
+- rect3 객체의 getBottomRight() 함수 호출
 
 `cout << "rect1의 면적은 : " << rect1.getArea() << endl;`
-
+- rect1 사각형의 면적 출력
 
 `cout << "rect2의 둘레는 : " << rect2.getPerimeter() << endl;`
-
+- rect2 사각형의 둘레 출력
 
 `cout << "rect3의 우측하단의 좌표는 : (" << rect3.x << " , " << rect3.y << ")" << endl;`
-
+- rect3 사각형의 우측 하단의 좌표 출력
 
 `return 0;`
 - 0을 반환하고 메인 함수를 종료한다.
