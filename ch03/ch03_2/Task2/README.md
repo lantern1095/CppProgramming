@@ -41,15 +41,16 @@
 - 메인함수 시작
 
 `Triangle tri1;`
-- triangle 클래스의 객체 tri1을 생성한다.
-
-`Triangle tri2(2, 4);`
+- Triangle 클래스의 객체 tri1을 생성한다. 매개변수가 없으므로 기본 생성자를 호출한다.
 
 `cout << "삼각형의 면적은 " << tri1.getArea() << endl;`
 - 삼각형의 면적 출력
 
-`cout << "삼각형의 면적은 " << tri2.getArea() << endl;`
+`Triangle tri2(2, 4);`
+- Triangle 클래스의 객체 tri2를 생성한다. 매개변수 2, 4를 받아 각각 base와 height를 초기화한다.
 
+`cout << "삼각형의 면적은 " << tri2.getArea() << endl;`
+- 삼각형의 면적 출력
 
 `return 0;`
 - 0을 반환하고 메인 함수를 종료한다.
