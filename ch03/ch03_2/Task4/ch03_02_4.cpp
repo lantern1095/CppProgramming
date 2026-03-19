@@ -25,10 +25,7 @@ public:
 
 Rectangle::Rectangle() : Rectangle(1,1,1,1) {}
 Rectangle::Rectangle(int Ix, int Iy) : Rectangle(Ix,Iy,1,1) {}
-Rectangle::Rectangle(int Ix, int Iy, int w, int h) {
-	x = Ix; y = Iy;
-	width = w; height = h;
-}
+Rectangle::Rectangle(int Ix, int Iy, int w, int h) : x(Ix), y(Iy), width(w), height(h) {}
 
 int Rectangle::getArea() {
 	return width * height;
