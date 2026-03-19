@@ -47,7 +47,7 @@
 - 삼각형의 면적 출력
 
 `Triangle tri2(2, 4);`
-- Triangle 클래스의 객체 tri2를 생성한다. 매개변수 2, 4를 받아 각각 base와 height를 초기화한다.
+- Triangle 클래스의 객체 tri2를 생성한다. 매개변수 2, 4를 이용해 각각 base와 height를 초기화한다.
 
 `cout << "삼각형의 면적은 " << tri2.getArea() << endl;`
 - 삼각형의 면적 출력
