@@ -23,10 +23,10 @@
 - 구의 부피를 반환하는 함수 getVolume() 선언
 
 `Sphere::Sphere() : Sphere(1)`
-- 
+- 위임 생성자를 이용해 Sphere(1) 생성자에 위임한다.
 
 `Sphere::Sphere(int a) : radius(a)`
-
+- 
 
 `double Sphere::getVolume() `
 
