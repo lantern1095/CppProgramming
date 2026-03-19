@@ -5,34 +5,49 @@
 - using 지시어를 사용하여 std 네임스페이스에 선언된 이름들을 사용할 때 std::를 생략한다.
 
 `class Sphere `
+- Sphere 클래스 선언
 
 `int radius;`
+- 정수형 변수 radius 선언
 
 `public:`
+- 접근지정자를 public으로 선언
 
 `Sphere();`
+- 기본 생성자 Sphere() 선언
 
 `Sphere(int a);`
 
+
 `double getVolume();`
+
 
 `Sphere::Sphere() : Sphere(1)`
 
+
 `Sphere::Sphere(int a) : radius(a)`
+
 
 `double Sphere::getVolume() `
 
+
 `return (4.0 / 3.0) * 3.14 * (radius * radius * radius);`
+
 
 `int main() `
 
+
 `Sphere sph1;`
+
 
 `cout << "구의 부피는" << sph1.getVolume() << endl;`
 
+
 `Sphere sph2(3);`
 
+
 `cout << "구의 부피는" << sph2.getVolume() << endl;`
+
 
 `return 0;`
 - 0을 반환하고 메인 함수를 종료한다.
