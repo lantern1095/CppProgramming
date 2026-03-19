@@ -20,10 +20,10 @@
 - 매개변수를 하나 받는 생성자 선언
 
 `double getVolume();`
-- 
+- 구의 부피를 반환하는 함수 getVolume() 선언
 
 `Sphere::Sphere() : Sphere(1)`
-
+- 
 
 `Sphere::Sphere(int a) : radius(a)`
 
