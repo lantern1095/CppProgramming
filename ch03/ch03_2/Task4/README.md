@@ -5,13 +5,13 @@
 - using 지시어를 사용하여 std 네임스페이스에 선언된 이름들을 사용할 때 std::를 생략한다.
 
 `class Rectangle `
-
+- Rectangle 클래스 선언
 
 `public:`
-
+- 접근지정자를 public으로 설정
 
 `int width, height;`
-
+- 정수형 매개변수 width와 height 선언
 
 `int x, y;`
 
