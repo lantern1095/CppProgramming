@@ -26,25 +26,25 @@
 - 위임 생성자를 이용해 Sphere(1) 생성자에 위임한다.
 
 `Sphere::Sphere(int a) : radius(a)`
-- 멤버 초기화 리스트를 이용해 매개변수 a를 radius
+- 멤버 초기화 리스트를 이용해 매개변수 a로 radius를 초기화한다.
 
 `double Sphere::getVolume() `
-
+- getVolume() 함수 구현부
 
 `return (4.0 / 3.0) * 3.14 * (radius * radius * radius);`
-
+- 구의 부피를 계산하여 반환한다.
 
 `int main() `
-
+- 메인 함수 시작
 
 `Sphere sph1;`
-
+- Sphere클래스의 객체 sph1 생성, 매개변수가 없으므로 기본 생성자를 호출한다.
 
 `cout << "구의 부피는" << sph1.getVolume() << endl;`
-
+- 구의 부피 출력
 
 `Sphere sph2(3);`
-
+- Sphere클래스의 객체 sph2를 생성하고, 매개변수가 없으므로 기본 생성자를 호출한다.
 
 `cout << "구의 부피는" << sph2.getVolume() << endl;`
 
