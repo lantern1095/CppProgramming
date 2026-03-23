@@ -13,7 +13,7 @@
 - 정수형 변수 radius 선언
 
 `public:`
-- 접근지정자를 public 으로 설
+- 접근지정자를 public 으로 설정
 
 `Sphere();`
 - 기본 생성자 선언
