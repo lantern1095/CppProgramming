@@ -40,22 +40,31 @@
 - 생성자를 호출했음을 출력한다.
 
 `triangle::~triangle()`
+- ~triangle() 소멸자 구현부
 
 `cout << "밑변 " << width << " 높이 " << height << " 인 삼각형 소멸" << endl;`
+- 소멸자를 호출했음을 출력한다.
 
 `triangle tri1(4, 8);`
+- triangle 클래스의 전역 객체 tri1을 생성하고 4, 8을 매개변수로 하여 width와 height를 초기화한다.
 
 `triangle tri2(2, 2);`
+- triangle 클래스의 전역 객체 tri2을 생성하고 2, 2을 매개변수로 하여 width와 height를 초기화한다.
 
 `double triangle::getarea()`
+- getarea()함수 구현부
 
 `return width * height / 2.0;`
+- 삼각형의 면적을 구하여 반환한다.
 
 `int main()`
+- main()함수 시작
 
 `cout << "삼각형의 면적은 " << tri1.getarea() << endl;`
+- tri1 객체의 면적을 출력한다.
 
 `cout << "삼각형의 면적은" << tri2.getarea() << endl;`
+- tri2 객체의 면적을 출력한다.
 
 `return 0;`
 - 0을 반환하고 main() 함수를 종료한다.
