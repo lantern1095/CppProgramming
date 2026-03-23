@@ -37,13 +37,13 @@
 - 멤버 초기화 리스트를 이용해 width와 height를 각각 w, h의 값으로 초기화한다.
 
 `cout << "밑변 " << width << " 높이 " << height << " 인 삼각형 생성" << endl;`
-- 삼각형 객체가 생성되었음을 출력한다.
+- 생성자를 호출했음을 출력한다.
 
 `Triangle::~Triangle()`
 - ~Triangle() 소멸자 구현부
 
 `cout << "밑변 " << width << " 높이 " << height << " 인 삼각형 소멸" << endl;`
-- 삼각형 객체가 소멸되었음을 출력한다.
+- 소멸자를 호출했음을 출력한다.
 
 `double Triangle::getArea()`
 - getArea()함수 구현부
