@@ -59,11 +59,13 @@
 - 삼각형의 면적을 출력한다.
 
 `Triangle tri2(2, 4);`
-- Triangle 클래스의 tri2 객체를 생성한다. 2, 4를 w와 h에 
+- Triangle 클래스의 tri2 객체를 생성한다. 매개변수 2, 4를 이용해 width와 height를 초기화한다.
 
 `cout << "삼각형의 면적은" << tri2.getArea() << endl;`
+- 삼각형의 면적을 출력한다.
 
 `return 0;`
+- 0을 반환하고 main() 함수를 종료한다.
 
 ## 실행결과
 <img width="1471" height="278" alt="image" src="https://github.com/user-attachments/assets/c42219aa-902a-438c-a23f-b3ee01ac2c90" />
