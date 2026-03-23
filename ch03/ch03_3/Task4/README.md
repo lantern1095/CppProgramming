@@ -31,7 +31,7 @@
 - 타겟 생성자 Sphere(int r)를 호출하고 1을 매개변수로 넘긴다.
 
 `Sphere::Sphere(int r) : radius(r)`
-멤버 초기화 리스트를 이용해 radius를 r의 값으로 초기화한다.
+- 멤버 초기화 리스트를 이용해 radius를 r의 값으로 초기화한다.
 
 `cout << "반지름이 " << radius << " 인 구 생성" << endl;`
 - 생성자를 호출했음을 출력한다.
@@ -40,7 +40,7 @@
 - ~Sphere() 소멸자 구현부
 
 `cout << "반지름이 " << radius << " 인 구 소멸" << endl;`
-소멸자를 호출했음을 출력한다.
+- 소멸자를 호출했음을 출력한다.
 
 `double Sphere::getVolume()`
 - getVolume() 함수 구현부
