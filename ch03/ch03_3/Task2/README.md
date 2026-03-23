@@ -17,36 +17,49 @@
 - 접근지정자를 public으로 설정
 
 `double getArea();`
-` 삼각형의 면적을 구하는 클래스 선언
+- 삼각형의 면적을 구하는 클래스 선언
 
 `Triangle();`
-
+- 기본 생성자 선언
 
 `Triangle(int w, int h);`
-
+- 밑변과 높이를 매개변수로 받는 생성자 선언
+  
 `~Triangle();`
+- 소멸자 선언
 
 `Triangle::Triangle() : Triangle(1, 1)`
+- 타겟 생성자 Triangle(int w, int h)를 호출하고 1, 1을 매개변수로 넘긴다.
 
 `Triangle::Triangle(int w, int h) : width(w), height(h)`
+- 멤버 초기화 리스트를 이용해 width와 height를 각각 w, h의 값으로 초기화한다.
 
 `cout << "밑변 " << width << " 높이 " << height << " 인 삼각형 생성" << endl;`
+- 삼각형 객체가 생성되었음을 출력한다.
 
 `Triangle::~Triangle()`
+- ~Triangle() 소멸자 구현부
 
 `cout << "밑변 " << width << " 높이 " << height << " 인 삼각형 소멸" << endl;`
+- 삼각형 객체가 소멸되었음을 출력한다.
 
 `double Triangle::getArea()`
+- getArea()함수 구현부
 
 `return width * height / 2.0;`
+- 삼각형의 면적을 구하여 반환한다.
 
 `int main()`
+- main() 함수 시작
 
 `Triangle tri1;`
+- Triangle 클래스의 tri1 객체를 생성한다. 매개변수가 없으므로 기본 생성자를 호출한다.
 
 `cout << "삼각형의 면적은 " << tri1.getArea() << endl;`
+- 삼각형의 면적을 출력한다.
 
 `Triangle tri2(2, 4);`
+- Triangle 클래스의 tri2 객체를 생성한다. 2, 4를 w와 h에 
 
 `cout << "삼각형의 면적은" << tri2.getArea() << endl;`
 
