@@ -58,13 +58,13 @@
 - Triangle 클래스의 tri1 객체를 생성한다. 매개변수가 없으므로 기본 생성자를 호출한다.
 
 `cout << "삼각형의 면적은 " << tri1.getArea() << endl;`
-- 삼각형의 면적을 출력한다.
+- tri1 객체의 면적을 출력한다.
 
 `Triangle tri2(2, 4);`
 - Triangle 클래스의 tri2 객체를 생성한다. 매개변수 2, 4를 이용해 width와 height를 초기화한다.
 
 `cout << "삼각형의 면적은" << tri2.getArea() << endl;`
-- 삼각형의 면적을 출력한다.
+- tri2 객체의 면적을 출력한다.
 
 `return 0;`
 - 0을 반환하고 main() 함수를 종료한다.
