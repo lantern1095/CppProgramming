@@ -27,10 +27,8 @@
 `Circle();`
 - 기본 생성자 선언
 
-`Circle::Circle() `
+Circle::Circle() { radius = 1; }
 - 
-
-`radius = 1;`
 
 `void Circle::setRadius(int num) `
 
