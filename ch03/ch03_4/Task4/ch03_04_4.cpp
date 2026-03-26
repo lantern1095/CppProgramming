@@ -24,7 +24,7 @@ public:
 
 Triangle::Triangle() : Triangle(1, 1) {}
 Triangle::Triangle(int w, int h) {
-	if (w < 0 || h < 0) {
+	if (w <= 0 || h <= 0) {
 		cout << "길이는 양수여야함, 대신에 폭1, 높이 1삼각형 생성" << endl;
 		width = 1;
 		height = 1;
