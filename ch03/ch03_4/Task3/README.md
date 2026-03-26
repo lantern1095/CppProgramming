@@ -51,7 +51,7 @@
 `void Triangle::setWidth(int w) `
 - setter 함수를 통해 맴버변수에 접근해 폭(width)을 수정
 
-`if (w < 0) cout << "0 이하로 설정할 수 없습니다.";`
+`if (w <= 0) cout << "0 이하로 설정할 수 없습니다.";`
 - 매개변수가 0 이하의 값이 들어가는 것을 막기 위한 처리문
 
 `else width = w;`
@@ -60,7 +60,7 @@
 `void Triangle::setHeight(int h) `
 - setter 함수를 통해 맴버변수에 접근해 높이(height)를 수정
 
-`if (h < 0) cout << "0 이하로 설정할 수 없습니다.";`
+`if (h <= 0) cout << "0 이하로 설정할 수 없습니다.";`
 - 매개변수가 0 이하의 값이 들어가는 것을 막기 위한 처리문
 
 `else height = h;`
@@ -82,7 +82,7 @@
 - Triangle 클래스의 tri 객체를 생성하고 기본 생성자를 호출한다.
 
 `tri.setWidth(3);`
-- tri 객체의 width의 값을 setter 함수를 통해 접근하여 3로 수정한다.
+- tri 객체의 width의 값을 setter 함수를 통해 접근하여 3으로 수정한다.
 
 `tri.setHeight(5);`
 - tri 객체의 height의 값을 setter 함수를 통해 접근하여 5로 수정한다.
