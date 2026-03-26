@@ -49,10 +49,10 @@
 - main() 함수 시작
 
 `Circle waffle;`
-- waffle 객체를 생성하고 기본 생성자를 호출한다.
+- Circle 클래스의 waffle 객체를 생성하고 기본 생성자를 호출한다.
 
 `waffle.setRadius(5);`
-- waffle 객체의 radius를 setter 함수를 통해 접근하여 5로 수정한다.
+- waffle 객체의 radius의 값을 setter 함수를 통해 접근하여 5로 수정한다.
 
 `cout << "원의 반지름은 " << waffle.getRadius() << endl;`
 - 원의 반지름 출력
