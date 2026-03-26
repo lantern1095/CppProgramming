@@ -39,13 +39,13 @@ Triangle::~Triangle() {
 }
 
 void Triangle::setWidth(int w) {
-	if (w < 0) {
+	if (w <= 0) {
 		cout << "폭은 양수이어야 함" << endl;
 	}
 	else width = w;
 }
 void Triangle::setHeight(int h) {
-	if (h < 0) {
+	if (h <= 0) {
 		cout << "높이는 양수이어야 함" << endl;
 	}
 	else height = h;
