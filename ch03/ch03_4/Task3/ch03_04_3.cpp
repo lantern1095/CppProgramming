@@ -27,11 +27,11 @@ Triangle::Triangle() : Triangle(1, 1) {}
 Triangle::Triangle(int w, int h) : width(w), height(h) {}
 
 void Triangle::setWidth(int w) {
-	if (w < 0) cout << "0 이하로 설정할 수 없습니다.";
+	if (w <= 0) cout << "0 이하로 설정할 수 없습니다.";
 	else width = w;
 }
 void Triangle::setHeight(int h) {
-	if (h < 0) cout << "0 이하로 설정할 수 없습니다.";
+	if (h <= 0) cout << "0 이하로 설정할 수 없습니다.";
 	else height = h;
 }
 int Triangle::getWidth() { return width; }
