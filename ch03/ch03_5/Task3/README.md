@@ -51,39 +51,41 @@ inline void Coffee::show() {
 }
 ```
 - `show()` 함수 구현부,
-- `cout` 을 이용해 먼저 coffee, sugar 등 재료의 이름을 출력한다
-- `for` 을 이용해
+- `cout` 을 이용해 먼저 재료의 이름을 출력한다
+- `for` 을 이용해 재료에 저장되어 있는 수 만큼의 `*` 을 출력한다.
 
 `int main()`
-
+- `main()` 함수 시작
 
 `Coffee espresso;`
-
+- Coffee 클래스의 espresso 객체 생성하고 기본 생성자를 호출한다
 
 `Coffee americano(5, 0, 0, 10);`
-
+- Coffee 클래스의 americano 객체를 생성하고 5, 0, 0, 10 을 매개변수로 전달한다.
 
 `Coffee cappucchino(5, 1, 5, 2);`
-
+- Coffee 클래스의 cappucchino 객체를 생성하고 5, 1, 5, 2 를 매개변수로 전달한다.
 
 `Coffee mySweet(3, 7, 5, 5);`
-
+- Coffee 클래스의 mySweet 객체를 생성하고 3, 7, 5, 5 를 매개변수로 전달한다.
 
 `espresso.show();`
-
+- `espresso` 객체의 `show()` 함수 호출
 
 `cout << endl;`
-
+- 줄바꿈 출력
 
 `mySweet.show();`
-
+- `mySweet` 함수의 `show()` 함수 호출
 
 `return 0;`
-
+- 0을 반환하고 `main()` 함수 종료
 
 ## 2번문제 실행결과
 <img width="1478" height="372" alt="image" src="https://github.com/user-attachments/assets/ed08dc07-0da8-47a3-943b-eb0cc4832f83" />
 <br><br><br>
+
+
 
 ## 5번문제 실행결과
 <img width="1475" height="241" alt="image" src="https://github.com/user-attachments/assets/474f03f9-b22e-4f64-ae08-31ad925cbb25" />
