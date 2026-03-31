@@ -80,10 +80,92 @@ inline void Coffee::show() {
 
 `return 0;`
 - 0을 반환하고 `main()` 함수 종료
-
+- 
 ## 2번문제 실행결과
 <img width="1478" height="372" alt="image" src="https://github.com/user-attachments/assets/ed08dc07-0da8-47a3-943b-eb0cc4832f83" />
 <br><br><br>
+
+## 5번 문제
+
+`#include<iostream>`
+
+
+`using namespace std;`
+
+
+`class CoffeeMachine`
+
+
+`private:`
+
+
+`int coffee;`
+
+
+`int water;`
+
+
+`int sugar;`
+
+
+`public:`
+
+
+`CoffeeMachine():CoffeeMachine(5, 10, 6){}`
+
+
+`CoffeeMachine(int c, int w, int s):coffee(c),water(w),sugar(s){}`
+
+
+`~CoffeeMachine() {}`
+
+
+`void drinkEspresso() { coffee -= 1; water -= 1; }`
+
+
+`void drinkAmericano() { coffee -= 1; water -= 2; }`
+
+
+`void drinkSugarCoffee() { coffee -= 1; water -= 2; sugar -= 1; }`
+
+
+`void full() { coffee = water = sugar = 10; }`
+
+
+`void show() { cout << "[머신 상태] 커피:" << coffee << "	물:" << water << "	설탕:" << sugar << endl; }`
+
+
+`int main()`
+
+
+`CoffeeMachine java(5, 10, 6);`
+
+
+`java.drinkEspresso();`
+
+
+`java.show();`
+
+
+`java.drinkAmericano();`
+
+
+`java.show();`
+
+
+`java.drinkSugarCoffee();`
+
+
+`java.show();`
+
+
+`java.full();`
+
+
+`java.show();`
+
+
+`return 0;`
 
 
 
