@@ -49,4 +49,6 @@ int main() {
 	a.put(36.4);
 	a.dump();
 	cout << "평균 체온은 " << a.getAvg() << "입니다." << endl;
+
+	return 0;
 }
