@@ -22,7 +22,6 @@
 `Triangle():Triangle(1,1) {}`
 - 타겟 생성자 triangle(int w, int h)를 호출하고 1, 1을 매개변수로 넘긴다.
 
-
 `Triangle(int w, int h) :width(w), height(h) { cout << "밑변 " << width << " 높이 " << height << " 인 삼각형 생성" << endl; }`
 - 멤버 초기화 리스트를 이용해 width와 height를 각각 w, h의 값으로 초기화하는 생성자를 선언하고 생성자가 호출되었음을 출력한다.
 
