@@ -3,8 +3,8 @@
 using namespace std;
 
 int main() {
-	double n;
-	double max = 0;
+	int n = 0;
+	double max = 0.0;
 	
 	cout << "입력할 실수의 개수를 입력하세요 : ";
 	cin >> n;
