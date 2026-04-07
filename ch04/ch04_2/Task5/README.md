@@ -54,3 +54,7 @@ cin.getline(pchar, num+1, '\n');
 
 `return 0;`
 - 0을 반환하고 main() 함수를 종료한다.
+
+## 실행결과
+<img width="1471" height="223" alt="image" src="https://github.com/user-attachments/assets/b13c5b37-e071-4279-abde-9236c2e31c0c" />
+
