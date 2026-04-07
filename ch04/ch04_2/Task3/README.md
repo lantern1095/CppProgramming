@@ -1,50 +1,61 @@
-`#include <iostream>`
 
+`#include <iostream>`
+- cin, cout, 등 라이브러리 객체의 선언을 포함하고 있는 헤더파일인 'iostream' 을 포함하는 코드
 
 `using namespace std;`
-
+- using 지시어를 사용하여 std 네임스페이스에 선언된 이름들을 사용할 때 std::를 생략한다.
 
 `int main()`
+- main() 함수 시작
 
+
+`int n = 0;`
+- 정수형 변수 n을 선언하고 0으로 초기화한다
+
+`int avg = 0;`
+- 정수형 변수 avg를 선언하고 0으로 초기화한다.
 
 ```
 cout << "입력할 정수의 개수를 입력하세요 : ";
-int n;
-cin >> n; 
-if (n <= 0) return -1;
+cin >> n;
 ```
+- 입력할 정수의 개수를 입력받아 n에 저장한다.
 
 
+`int* p = new int[n];`
+- 정수형 포인터 p를 선언하고, new 연산자를 통해 n개의 크기를 가진 정수형 배열을 힙 영역에 동적으로 할당한다.
+
 ```
-int* p = new int[n];
 if (!p) {
     cout << "메모리를 할당할 수 없습니다.";
     return -1;
 }
 ```
+- 메모리 부족으로 할당에 실패할 시 -1을 반환한다.
 
 
 ```
 for (int i = 0; i < n; i++) {
     cout << i + 1 << "번째 정수: ";
     cin >> p[i];
+    avg += p[i];
 }
 ```
-
-
-```
-int avg = 0;
-for (int i = 0; i < n; i++) { avg += p[i]; }
-```
-
+- 반복문을 이용하여 n의 크기만큼 코드를 반복시키며 p[i]에 정수를 입력받는다.
+- 변수 avg 에 avg + p[i]의 값을 저장한다.
 
 `delete[] p;`
-
+- 할당한 동적 메모리를 헤제한다. 
 
 `cout << "평균값은 " << avg / n << "입니다." << endl;`
+- 평균값을 출력한다.
 
+`return 0;`
+- 0을 반환하고 main() 함수를 종료한다.
 
----
+## 실행결과
+<img width="1482" height="321" alt="image" src="https://github.com/user-attachments/assets/7c83ee3a-95da-4b75-b3c3-f30e08782166" />
+
 
 
 
