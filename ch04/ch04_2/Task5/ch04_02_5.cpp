@@ -14,6 +14,7 @@ int main() {
 
 	cout << "저장할 문자열의 크기를 입력하세요 : ";
 	cin >> num;
+	cin.ignore();
 	cout << endl;
 
 	pchar = new char[num + 1];
