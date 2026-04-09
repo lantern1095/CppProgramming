@@ -34,6 +34,10 @@ int main() {
 	cin >> n;
 
 	Sphere* ptr = new Sphere[n];
+	if (!ptr) {
+		cout << "메모리를 할당할 수 없습니다.";
+		return -1;
+	}
 
 	for (int i = 0; i < n; i++) {
 		(ptr + i)->setRadius(i);
