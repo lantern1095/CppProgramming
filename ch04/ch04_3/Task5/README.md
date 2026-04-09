@@ -96,4 +96,5 @@ for (int i = 0; i < n; i++) {
 * 동일 여부: 확인 완료
 
 ## 실행결과
-<img width="1480" height="288" alt="image" src="https://github.com/user-attachments/assets/f64ef648-ba55-439e-a99f-5587088be4bb" />
+<img width="800" height="200" alt="image" src="https://github.com/user-attachments/assets/5eab4d1e-a2d1-4722-893c-d583d2109a6d" />
+
