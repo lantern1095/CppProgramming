@@ -8,7 +8,7 @@ private:
 
 public:
 	Sphere():Sphere(1){}
-	Sphere(int num) { radius = num; }
+	Sphere(int num) : radius(num) { }
 	~Sphere(){}
 
 	void setRadius(int num);
