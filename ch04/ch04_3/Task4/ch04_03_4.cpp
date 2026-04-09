@@ -31,9 +31,8 @@ int main()
 		return -1;
 	}
 
-	Triangle* p = triArr;
 	for (int i = 0; i < 3; i++) {
-		cout << "삼각형" << i + 1 << " 의 면적은 " << (p+i)->getArea() << endl;
+		cout << "삼각형" << i + 1 << " 의 면적은 " << (triArr + i)->getArea() << endl;
 	}
 
 	delete[] triArr;
