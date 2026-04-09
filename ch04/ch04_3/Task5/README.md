@@ -72,28 +72,32 @@ cin >> n;
 - new 연산자를 사용하여 Sphere 객체 3개를 저장할 수 있는 배열을 힙 영역에 동적 할당한다.
 
 ```
+if (!ptr) {
+	cout << "메모리를 할당할 수 없습니다.";
+	return -1;
+}
+```
+- 메모리를 할당할 수 없다면 오류를 출력하고 -1을 반환한다.
+
+```
 for (int i = 0; i < n; i++) {
 	(ptr + i)->setRadius(i);
 }
 ```
-
+- 포인터 연산을 이용하여 각 ptr 객체에 접근하고 setRadius() 함수를 호출하여 반지름을 설정한다.
 
 ```
 for (int i = 0; i < n; i++) {
 	cout << "구" << i + 1 << " 의 부피 : " << (ptr + i)->getVolume() << endl;
 }
 ```
-
+- 포인터 연산을 이용하여 각 ptr 객체에 접근하고 getVolume() 함수를 호출하여 구의 부피를 반환해 출력한다.
 
 `delete[] ptr;`
-
+- delete[] ptr을 이용해 할당받은 메모리를 반환한다.
 
 `return 0;`
-
-
-* 원본 줄 수: 28줄 (단독 중괄호 줄 제외)
-* 변환 후 줄 수: 28줄
-* 동일 여부: 확인 완료
+- 0을 반환하고 main()함수를 종료한다.
 
 ## 실행결과
 <img width="800" height="200" alt="image" src="https://github.com/user-attachments/assets/5eab4d1e-a2d1-4722-893c-d583d2109a6d" />
