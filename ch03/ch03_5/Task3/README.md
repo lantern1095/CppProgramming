@@ -6,8 +6,8 @@
 `using namespace std;`
 - using 지시어를 사용하여 std 네임스페이스에 선언된 이름들을 사용할 때 std::를 생략한다.
 
-`class Triangle `
-- Triangle 클래스 선언
+`class Coffee `
+- Coffee 클래스 선언
 
 `private:`
 - 접근지정자를 private로 설정
