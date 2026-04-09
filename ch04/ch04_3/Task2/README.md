@@ -2,7 +2,7 @@
 
 - 위 코드에서는 반복문 속에서 Circle 객체를 동적으로 할당받아 사용하고 있지만, 사용이 끝나고 할당받은 메모리를 해제하지 않고 있어 반복문이 반복 될 때마다 계속해서 사용하지 않는 메모리가 점점 쌓이게 되는 구조라는 문제점이 있다. 이를 해결하기 위해서는 원의 면적을 출력하고 delete 를 이용해 메모리를 해제 해주어야 한다.
 
-  ``` cpp
+``` cpp
   #include <iostream>
 using namespace std;
 class Circle {
@@ -40,6 +40,7 @@ int main() {
 	}
 }
 ```
+
 <img width="1482" height="320" alt="image" src="https://github.com/user-attachments/assets/756cab2a-5b5a-4a83-80d7-f64836ebccba" />
 
 
