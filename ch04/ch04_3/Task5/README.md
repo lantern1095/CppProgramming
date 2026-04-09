@@ -20,56 +20,56 @@
 `Sphere():Sphere(1)`
 - 타겟 생성자 Sphere(int num) 을 호출하고 1을 매개 변수로 넘기는 위임 생성자.
 
-`Sphere(int num) { radius = num; }`
+`Sphere(int num) : radius(num) {}`
+- 정수형 매개변수 num을 받아 멤버 초기화 리스트를 이용하여 radius의 값을 num으로 변경하는 생성자
 
-
-`~Sphere()`
-
+`~Sphere(){}`
+- 기본 소멸자 선언
 
 `void setRadius(int num);`
-
+- 매개변수 num을 받아 radius의 값을 변경하는 setRadius 함수
 
 `double getVolume();`
-
+- 구의 부피를 구하여 반환하는 getVolume() 함수 선언
 
 `double Sphere::getVolume()`
-
+- getVolume() 함수 구현부
 
 `double r = radius;`
-
+- radius의 값을 담는 실수형 변수 r 선언과 초기화
 
 `double res = 0.0;`
-
+실수형 변수 res 선언 후 0.0 으로 초기화
 
 `res = (4.0 / 3.0) * 3.14 * (r * r * r);`
-
+- 구의 부피를 구한 값을 res에 저장
 
 `return res;`
-
+- res(구의 부피) 반환
 
 `void Sphere::setRadius(int num)`
+- setRadius() 함수 구현부
 
-
-`cout << "구" << num + 1 << " 의 반지름 : ";`
-
-
-`cin >> radius;`
-
+```
+cout << "구" << num + 1 << " 의 반지름 : ";
+cin >> radius;
+```
+- radius를 입력받아 구 객체의 반지름을 초기화한다.
 
 `int main()`
-
+- main() 함수 시작
 
 `int n;`
+- 정수형 변수 n 선언
 
-
-`cout << "생성하고자 하는 구의 개수 : ";`
-
-
-`cin >> n;`
-
+```
+cout << "생성하고자 하는 구의 개수 : ";
+cin >> n;
+```
+- 구 객체를 동적으로 생성하기 위해 갯수를 입력받는다.
 
 `Sphere* ptr = new Sphere[n];`
-
+- new 연산자를 사용하여 Sphere 객체 3개를 저장할 수 있는 배열을 힙 영역에 동적 할당한다.
 
 ```
 for (int i = 0; i < n; i++) {
