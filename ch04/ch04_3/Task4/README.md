@@ -8,10 +8,8 @@
 `class Triangle `
 - Triangle 클래스 선언
 
-
 `private:`
 - 접근지정자를 private로 설정
-
 
 `int width;`
 - 정수형 변수 width 선언
@@ -23,7 +21,7 @@
 - 접근지정자를 public 으로 설정
 
 `Triangle():Triangle(1,1)`
-- 타겟 생성자 Triangle(int w, int h) 를 호출하고 1, 1 을 매개변수로 넘기는 기본 생성자.
+- 타겟 생성자 Triangle(int w, int h) 를 호출하고 1, 1 을 매개변수로 넘기는 위임 생성자.
 
 `Triangle(int w, int h);`
 - int w, int h를 매개 변수로 받는 생성자 선언
