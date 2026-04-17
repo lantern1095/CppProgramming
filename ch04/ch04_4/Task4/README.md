@@ -134,4 +134,15 @@ cin >> count;
 
 
 
+
+
 ## 문제 5
+
+
+
+
+
+## 실행결과
+<img width="909" height="149" alt="image" src="https://github.com/user-attachments/assets/da79e625-7db4-4f1f-ac02-519ba27b3108" />
+
+
