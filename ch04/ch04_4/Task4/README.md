@@ -137,7 +137,173 @@ cin >> count;
 
 
 ## 문제 5
+`#include <iostream>`
+- cin, cout, 등 라이브러리 객체의 선언을 포함하고 있는 헤더파일인 'iostream' 을 포함하는 코드
 
+
+`using namespace std;`
+- using 지시어를 사용하여 std 네임스페이스에 선언된 이름들을 사용할 때 std::를 생략한다.
+
+
+`class Container`
+- Container 클래스 선언
+
+
+`int* p;`
+- 정수형 포인터 p 선언
+
+
+`int size;`
+- 정수형 변수 size 선언
+
+
+`public:`
+- 접근지정자를 public 으로 설정
+
+
+`Container(int size);`
+- 생성자 Container(int size) 선언
+
+
+`~Container();`
+- 소멸자 Container() 선언
+
+
+`void read();`
+- read 함수 선언
+
+
+`void write();`
+- write 함수 선언
+
+
+`void rotate();`
+- rotate 함수 선언
+
+
+`double avg();`
+- avg 함수 선언
+
+
+`Container::Container(int size)`
+- 생성자 Container(int size) 구현부
+
+
+`this->size = size;`
+- 멤버 변수 size를 매개 변수 size 값으로 초기화
+
+
+`p = new int[size];`
+- p 변수에 size의 크기만큼 정수형 배열을 동적으로 할당받는다.
+
+
+```
+if (!p) {
+	cout << "메모리를 할당할 수 없습니다.";
+}
+```
+- 오류 처리문
+
+
+`Container::~Container()`
+- 소멸자 Container() 구현부
+
+
+`delete[] p;`
+- p 동적으로 할당받은 메모리를 해제한다.
+
+
+`void Container::read()`
+- read 함수 구현부
+
+
+```
+cout << "정수 10개 입력 >> ";
+for (int i = 0; i < size; i++) {
+	cin >> p[i];
+}
+```
+- size의 값만큼 반복시키며 정수를 입력받아 p의 i번째 요소를 채워넣는다.
+
+
+`void Container::write()`
+- write 함수 구현부
+
+
+```
+for (int i = 0; i < size; i++) {
+	cout << p[i] << " ";
+}
+cout << endl;
+```
+- size의 값만큼 반복하며 p 배열의 요소를 출력한다.
+
+
+`void Container::rotate()`
+- rotate 함수 구현부
+
+
+`int temp = p[size - 1];`
+- 배열의 마지막 요소를 임시 변수 temp에 저장
+
+
+```
+for (int i = size - 1; i >= 0; i--) {
+	p[i] = p[i - 1];
+}
+```
+- 요소를 한 칸씩 뒤로 밀어내는 반복문
+
+
+`p[0] = temp;`
+- 마지막이었던 요소를 배열의 첫 번째 칸에 저장
+
+
+`double Container::avg()`
+- avg 함수 구현부
+
+
+`double avg = 0;`
+- 실수형 변수 avg 선언 후 0으로 초기화
+
+```
+for (int i = 0; i < size; i++) {
+	avg += p[i];
+}
+```
+- size의 값만큼 반복하며 p 배열의 모든 요소를 avg에 더한다.
+
+`return avg / size;`
+- 합산된 값을 size로 나누어 평균을 반환한다.
+
+`int main()`
+- main 함수 시작
+
+`Container cnt(10);`
+- Container 클래스의 cnt객체를 생성하고, 10을 생성자의 인자로 전달한다.
+
+`cnt.read();`
+- cnt 객체의 read 함수 호출
+
+
+`cnt.write();`
+- cnt 객체의 write 함수 호출
+
+
+`cnt.rotate();`
+- cnt 객체의 rotate 함수 호출
+
+
+`cnt.write();`
+- cnt 객체의 write 함수 호출
+
+
+`cout << "평균은 " << cnt.avg() << endl;`
+- cnt 객체의 avg 함수 호출 후 반환값을 이용해 평균 출력
+
+
+`return 0;`
+- 0을 반환하고 main 함수를 종료한다.
 
 
 
