@@ -1,4 +1,4 @@
-## 2번
+## 문제 2
 
 `#include<iostream>`
 - cin, cout, 등 라이브러리 객체의 선언을 포함하고 있는 헤더파일인 'iostream' 을 포함하는 코드
@@ -131,6 +131,129 @@ cin >> count;
 
 ## 실행결과
 <img width="860" height="150" alt="image" src="https://github.com/user-attachments/assets/9b709c28-017e-4641-88a2-c87fa4d3a583" />
+
+
+
+## 문제 4
+`#include <iostream>`
+- cin, cout, 등 라이브러리 객체의 선언을 포함하고 있는 헤더파일인 'iostream' 을 포함하는 코드
+
+
+`#include <string>`
+- string 클래스 사용과 다양한 문자열 처리 함수를 사용하기 위한 헤더파일
+
+
+`using namespace std;`
+- using 지시어를 사용하여 std 네임스페이스에 선언된 이름들을 사용할 때 std::를 생략한다.
+
+
+`class ReadStr`
+- ReadStr 클래스 선언
+
+
+`private:`
+- 접근지정자를 private으로 설정
+
+
+`string instr;`
+- 입력받은 문자열을 저장할 문자열 변수 instr 선언
+
+
+`string outstr;`
+- 처리 후의 문자열을 저장할 문자열 변수 outstr 선언
+
+
+`public:`
+- 접근지정자를 public 으로 설정
+
+
+`ReadStr();`
+- 기본 생성자 ReadStr() 선언
+
+
+`~ReadStr() {}`
+- 소멸자, 특별한 해제 작업 없이 정의됨
+
+
+`void inputStr();`
+- inputStr 함수 선언
+
+
+`void pickAlpha();`
+- pickAlpha 함수 선언
+
+
+`void printStr();`
+- printStr 함수 선언
+
+
+`ReadStr::ReadStr() :instr(""), outstr("") {}`
+- 기본 생성자 구현부, instr와 outstr을 빈 문자열로 초기화한다.
+
+
+`void ReadStr::inputStr()`
+- inputStr 함수 구현부
+
+
+`cout << "텍스트 입력 (한글 안됨) >> ";`
+- 안내 메시지 출력
+
+
+`getline(cin, instr);`
+- 한 줄의 문자열을 입력받아 instr에 저장한다.
+
+
+`void ReadStr::pickAlpha()`
+- pickAlpha 함수 구현부
+
+
+```
+for (int i = 0; i < instr.length(); i++) {
+	if (isalpha(instr[i])) {
+		outstr.append(1, instr[i]);
+	}
+	else if (instr[i] == ' ') {
+		outstr.append(1, instr[i]);
+	}
+}
+```
+- instr의 길이만큼 반복하며 알파벳이거나 공백인 경우에만 outstr 뒤에 추가한다.
+
+
+`void ReadStr::printStr()`
+- printStr 함수 구현부
+
+
+`cout << outstr;`
+- 처리된 결과 문자열인 outstr을 출력한다.
+
+
+`int main()`
+- main 함수 시작
+
+
+`ReadStr rdr;`
+- ReadStr 클래스의 rdr 객체 생성
+
+
+`rdr.inputStr();`
+- rdr 객체의 inputStr 함수 호출
+
+
+`rdr.pickAlpha();`
+- rdr 객체의 pickAlpha 함수 호출
+
+
+`rdr.printStr();`
+- rdr 객체의 printStr 함수 호출
+
+
+`return 0;`
+- 0을 반환하고 main 함수를 종료한다.
+
+
+## 실행결과
+<img width="973" height="84" alt="image" src="https://github.com/user-attachments/assets/da767fab-3c4f-4f72-8019-01cf85cff2ee" />
 
 
 
