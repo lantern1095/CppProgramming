@@ -62,10 +62,5 @@
 `*str2 = temp;`
 - temp에 보관해두었던 값을 str2가 가리키는 곳에 복사하여 교환을 완료한다.
 
-
-* 원본 줄 수: 18줄 (단독 중괄호 및 공백 줄 제외)
-* 변환 후 줄 수: 18줄
-* 동일 여부: 확인 완료
-
 ## 실행결과
 <img width="1520" height="211" alt="image" src="https://github.com/user-attachments/assets/c5e0062b-383c-4f6d-a724-dea42c292e3d" />
