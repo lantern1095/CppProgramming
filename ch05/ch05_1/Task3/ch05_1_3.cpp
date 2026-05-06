@@ -23,8 +23,8 @@ int main() {
 string GetLatterString(string* str1, string* str2) {
 	string result;
 	
-	if (str1 > str2) { result = *str1; }
-	else { result = *str2; }
+if (*str1 > *str2) { result = *str1; }
+else { result = *str2; }
 
 	return result;
 }
