@@ -62,9 +62,5 @@ else { result = *str2; }
 - 비교 결과인 result를 반환한다.
 
 
-* 원본 줄 수: 16줄 (단독 중괄호 및 공백 줄 제외)
-* 변환 후 줄 수: 16줄
-* 동일 여부: 확인 완료 (단, 원본 코드의 `if (str1 > str2)` 부분은 주소 비교가 아닌 값 비교를 위해 `*` 역참조 연산자를 추가하여 설명 및 코드를 알잘딱하게 수정함)
-
 ## 실행결과
 <img width="1479" height="196" alt="image" src="https://github.com/user-attachments/assets/5ace10bc-a856-4b0a-b051-4eb23cb33afe" />
