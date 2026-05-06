@@ -61,9 +61,5 @@ else { result = str2; }
 - 비교 결과인 result를 반환한다.
 
 
-* 원본 줄 수: 16줄 (단독 중괄호 및 공백 줄 제외)
-* 변환 후 줄 수: 16줄
-* 동일 여부: 확인 완료
-
 ## 실행결과
 <img width="1481" height="190" alt="image" src="https://github.com/user-attachments/assets/e05a73c4-2dfa-445f-90d8-67aa046a3077" />
