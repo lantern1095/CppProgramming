@@ -50,3 +50,7 @@
 `value += 2;`
 
 - value의 값에 2를 더한다.
+
+## 실행결과
+<img width="968" height="116" alt="image" src="https://github.com/user-attachments/assets/b7f1dfc4-3b76-4c69-9134-fefa10445cfe" />
+
