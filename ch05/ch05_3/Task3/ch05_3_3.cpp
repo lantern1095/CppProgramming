@@ -1,1 +1,23 @@
 
+#include<iostream>
+#include<string>
+using namespace std;
+
+void SwapString(string& str1, string& str2);
+int main() {
+	string s1("hello ");
+	string s2("world ");
+	cout << "교환 전 문자열 " << s1 << s2 << endl;
+
+	SwapString(s1, s2);
+
+	cout << "교환 후 문자열 " << s1 << s2 << endl;
+
+	return 0;
+}
+
+void SwapString(string& str1, string& str2) {
+	string tmp = str1;
+	str1 = str2;
+	str2 = tmp;
+}
