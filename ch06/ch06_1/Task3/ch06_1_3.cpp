@@ -1,11 +1,12 @@
-
 #include<iostream>
 using namespace std;
 
 class Rectangle {
 	int width, height;
 public:
-	Rectangle(int w=1, int h=1):width(w),height(h){}
+	Rectangle() { width = 1; height = 1; }
+	Rectangle(int w) { width = w; height = 1; }
+	Rectangle(int w, int h) { width = w; height = h; }
 	void show() { cout << "사각형의 폭은 " << width << ", 높이는 " << height << endl; }
 };
 
@@ -19,5 +20,3 @@ int main() {
 
 	return 0;
 }
-
-
