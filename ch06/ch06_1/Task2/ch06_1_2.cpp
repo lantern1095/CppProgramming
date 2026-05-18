@@ -12,7 +12,7 @@ int main() {
 	double y = big(3.14, 1.05);
 	cout << "큰 실수값은 " << y << endl;
 	string z = big("hello", "world");
-	cout << "사전ㅇ서 뒤에 오는 단어는 " << z << endl;
+	cout << "사전에서 뒤에 오는 단어는 " << z << endl;
 
 	return 0;
 }
