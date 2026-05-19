@@ -77,4 +77,5 @@
 
 
 ## 실습과제
-![Uploading image.png…]()
+<img width="1097" height="218" alt="image" src="https://github.com/user-attachments/assets/fa8d65a8-9751-4cb0-bd76-ccf2a681f6a7" />
+
