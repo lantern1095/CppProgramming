@@ -1,3 +1,60 @@
 
+`#include<iostream>`
+
+- `cin`, `cout`, 등 라이브러리 객체의 선언을 포함하고 있는 헤더파일인 'iostream' 을 포함하는 코드
+
+`using namespace std;`
+
+- `using` 지시어를 사용하여 `std` 네임스페이스에 선언된 이름들을 사용할 때 `std::`를 생략한다.
+
+`class Rectangle { ... };`
+
+- 사각형의 폭과 높이를 관리하고 출력하는 `Rectangle` 클래스 선언.
+
+`int width, height;`
+
+- 사각형의 폭과 높이를 저장할 변수 선언.
+
+`Rectangle(int w = 1, int h = 1) { width = w; height = h; }`
+
+- 디폴트 매개변수를 사용하여 인자가 없을 때는 1로, 인자가 있을 때는 해당 값으로 초기화하는 생성자.
+
+`void show() { cout << "사각형 폭은 " << width << ", 높이는 " << height << endl; }`
+
+- 사각형의 폭과 높이를 화면에 출력하는 함수.
+
+`int main()`
+
+- `main` 함수 시작.
+
+`Rectangle rect0;`
+
+- 매개변수 없는 생성자를 호출하여 `rect0` 객체 생성.
+
+`rect0.show();`
+
+- `rect0` 객체의 폭과 높이 출력.
+
+`Rectangle rect1(10);`
+
+- `rect1`의 생성자를 호출하고 10을 인자로 넘긴다.
+
+`rect1.show();`
+
+- `rect1` 객체의 폭과 높이 출력.
+
+`Rectangle rect2(10, 20);`
+
+- `rect2`의 생성자를 호출하고 10과 20을 인자로 넘긴다.
+
+`rect2.show();`
+
+- `rect2` 객체의 폭과 높이 출력.
+
+`return 0;`
+
+- 0을 반환하고 `main` 함수를 종료한다.
+
+
 ## 실행결과
 <img width="1101" height="181" alt="image" src="https://github.com/user-attachments/assets/bcd9f399-17a6-40d8-aede-9d1d619f26f8" />
