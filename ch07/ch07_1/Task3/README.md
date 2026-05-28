@@ -1,4 +1,4 @@
-<img width="959" height="170" alt="image" src="https://github.com/user-attachments/assets/9a699907-e00b-47db-b830-1e485ff287e4" />
+
 `#include<iostream>`
 -`cin`, `cout`, 등 라이브러리 객체의 선언을 포함하고 있는 헤더파일인 'iostream' 을 포함하는 코드
 
