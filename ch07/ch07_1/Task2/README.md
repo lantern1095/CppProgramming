@@ -134,3 +134,7 @@
 `}`
 
 - `main` 함수 종료.
+
+## 실행결과
+<img width="965" height="164" alt="image" src="https://github.com/user-attachments/assets/2c59ab0a-711c-4a25-977c-34c92d956eae" />
+
