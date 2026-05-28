@@ -9,7 +9,7 @@
 
 `class Complex;`
 
-- `ComplexAdd` 함수 선언에서 참조할 수 있도록 `Complex` 클래스가 존재함을 미리 알리는 전방 선언.
+- `Complex` 클래스가 존재함을 알리는 선언.
 
 `Complex ComplexAdd(Complex c1, Complex c2);`
 
@@ -17,7 +17,7 @@
 
 `class Complex {`
 
-- 복소수의 실수부와 허수부를 관리하는 `Complex` 클래스 선언 시작.
+- 복소수의 실수부와 허수부를 관리하는 `Complex` 클래스 선언
 
 `int real;`
 
@@ -43,13 +43,9 @@
 
 - 외부 함수인 `ComplexAdd` 함수를 프렌드로 지정하여 클래스의 private 멤버에 접근할 수 있도록 허용함.
 
-`};`
-
-- `Complex` 클래스 선언 종료.
-
 `Complex::Complex(int real, int img) {`
 
-- 생성자 구현부 시작.
+- 생성자 구현부
 
 `this->real = real;`
 
@@ -63,29 +59,21 @@
 
 - 생성된 복소수 값을 화면에 출력.
 
-`}`
-
-- 생성자 구현부 종료.
-
 `void Complex::show() {`
 
-- `show` 함수 구현부 시작.
+- `show` 함수 구현부
 
 `if (img >= 0) { cout << real << "+" << img << "j" << endl; }`
 
-- 허수부가 0보다 크거나 같으면 `+` 기호와 함께 복소수 형태로 출력.
+- 허수부가 0보다 크거나 같으면 + 기호 붙여서 출력
 
 `if (img < 0) { cout << real << img << "j" << endl; }`
 
-- 허수부가 0보다 작으면 음수 부호가 포함되므로 `+` 기호 없이 복소수 형태로 출력.
-
-`}`
-
-- `show` 함수 구현부 종료.
+- 0보다 작을 경우 + 기호 없이 출력
 
 `Complex ComplexAdd(Complex c1, Complex c2) {`
 
-- 외부 일반 함수 `ComplexAdd` 구현부 시작.
+ `ComplexAdd` 구현부
 
 `Complex temp;`
 
@@ -103,9 +91,6 @@
 
 - 더한 결과가 저장된 `temp` 객체를 반환한다.
 
-`}`
-
-- `ComplexAdd` 함수 구현부 종료.
 
 `int main() {`
 
@@ -131,9 +116,6 @@
 
 - 0을 반환하고 `main` 함수를 종료한다.
 
-`}`
-
-- `main` 함수 종료.
 
 ## 실행결과
 <img width="965" height="164" alt="image" src="https://github.com/user-attachments/assets/2c59ab0a-711c-4a25-977c-34c92d956eae" />
