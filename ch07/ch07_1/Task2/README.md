@@ -80,12 +80,10 @@
 - 연산 결과를 임시로 저장할 `Complex` 객체 `temp` 생성.
 
 `temp.real = c1.real + c2.real;`
-
-- `c1`과 `c2` 객체의 실수부 값을 더해 `temp` 객체의 `real`에 저장.
+- `c1` 과 `c2` 객체의 실수부를 더해 temp의 실수에 저장
 
 `temp.img = c1.img + c2.img;`
-
-- `c1`과 `c2` 객체의 허수부 값을 더해 `temp` 객체의 `img`에 저장.
+- `c1` 과 `c2` 객체의 허수부를 더해 temp의 허수에 저장
 
 `return temp;`
 
@@ -97,20 +95,18 @@
 - `main` 함수 시작.
 
 `Complex x(2, 3), y(-5, 10), sum;`
-
-- `x`와 `y` 생성자를 호출하고 각각 인자를 넘기며, `sum`은 인자 없이 기본값으로 생성한다.
+- x, y 객체에 각각 2,3 / -5,10 을 인자로 넘겨 생성, sum은 인자 없이 생성
 
 `sum = ComplexAdd(x, y);`
 
-- `x`와 `y`를 인자로 넘겨 `ComplexAdd` 함수를 호출하고 반환된 결과를 `sum`에 저장.
+- ComplexAdd 함수를 호출하고, x와 y를 인자로 넘겨 반환된 값을 sum에 저장
 
 `cout << "두 복소수의 합은 ";`
 
-- 결과 안내 메시지 출력.
+- 복소수의 합 출력
 
 `sum.show();`
-
-- `sum` 객체의 `show` 함수를 호출하여 더해진 복소수 값을 출력.
+- sum 객체의 show 함수 출력
 
 `return 0;`
 
