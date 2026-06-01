@@ -12,12 +12,12 @@ public:
 
 void Complex::show() {
 	if (img > 0) { cout << this->real << "+" << this->img << "j" << endl; }
-	else{ cout << this->real << this->img << "j" << endl; }
+	else { cout << this->real << this->img << "j" << endl; }
 }
 
 Complex& Complex::operator+= (Complex input) {
-	this->real += input.real;
-	this->img += input.img;
+	this->real = this->real + input.real;
+	this->img = this->img + input.img;
 
 	return *this;
 }
