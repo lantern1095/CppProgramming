@@ -7,7 +7,7 @@ class Complex {
 public:
 	Complex(int r = 0, int i = 0) : real(r), img(i) {}
 	void show();
-	Complex& operator+= (Complex input);
+	Complex& operator+= (Complex op2);
 };
 
 void Complex::show() {
@@ -15,9 +15,9 @@ void Complex::show() {
 	else { cout << real << img << "j" << endl; }
 }
 
-Complex& Complex::operator+= (Complex input) {
-	this->real = this->real + input.real;
-	this->img = this->img + input.img;
+Complex& Complex::operator+= (Complex op2) {
+	this->real = this->real + op2.real;
+	this->img = this->img + op2.img;
 
 	return *this;
 }
