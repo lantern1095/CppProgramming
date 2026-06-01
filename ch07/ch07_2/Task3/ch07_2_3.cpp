@@ -11,8 +11,8 @@ public:
 };
 
 void Complex::show() {
-	if (img > 0) { cout << this->real << "+" << this->img << "j" << endl; }
-	else { cout << this->real << this->img << "j" << endl; }
+	if (img > 0) { cout << real << "+" << img << "j" << endl; }
+	else { cout << real << img << "j" << endl; }
 }
 
 Complex& Complex::operator+= (Complex input) {
