@@ -5,7 +5,7 @@ class Complex {
 	int real;
 	int img;
 public:
-	Complex(int r = 0, int i = 0) { this->real = r; this->img = i; }
+	Complex(int r = 0, int i = 0) : real(r), img(i) {}
 	void show();
 	Complex& operator+= (Complex input);
 };
