@@ -7,14 +7,14 @@ class Complex {
 public:
 	Complex(int r = 0, int i = 0) { this->real = r; this->img = i; }
 	void show() { cout << this->real << "+" << this->img << "j" << endl; }
-	Complex operator+ (Complex input);
+	Complex operator+ (Complex op2);
 };
 
-Complex Complex::operator+(Complex input) {
+Complex Complex::operator+(Complex op2) {
 	Complex temp;
 
-	temp.real = this->real + input.real;
-	temp.img = this->img + input.img;
+	temp.real = this->real + op2.real;
+	temp.img = this->img + op2.img;
 
 	return temp;
 }
