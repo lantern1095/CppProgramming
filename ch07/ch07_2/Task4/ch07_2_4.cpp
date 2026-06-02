@@ -7,22 +7,22 @@ class Complex {
 public:
 	Complex(int r = 0, int i = 0) { this->real = r; this->img = i; }
 	void show();
-	Complex operator- (int input);
+	Complex operator- (int op2);
 };
 
 void Complex::show() {
 	if (img > 0) { cout << this->real << "+" << this->img << "j" << endl; }
-	else{ cout << this->real << this->img << "j" << endl; }
+	else { cout << this->real << this->img << "j" << endl; }
 }
 
-Complex Complex::operator-(int input) {
+Complex Complex::operator-(int op2) {
 	Complex temp;
 
-	temp.real = this->real - input;
-	temp.img = this->img - input;
+	temp.real = this->real - op2;
+	temp.img = this->img - op2;
 
 	return temp;
- }
+}
 
 
 int main() {
