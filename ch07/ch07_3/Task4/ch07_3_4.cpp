@@ -8,8 +8,8 @@ public:
 	Power(int kick = 0, int punch = 0) { this->kick = kick; this->punch = punch; }
 	void show();
 	Power operator* (int x);
-	friend Power& operator* (int x, Power& op);
-	friend Power operator+ (Power& op1, Power& op2);
+	friend Power operator* (int x, Power& op);
+	friend Power operator+ (Power op1, Power op2);
 };
 
 Power Power::operator* (int x) {
@@ -19,11 +19,14 @@ Power Power::operator* (int x) {
 	return tmp;
 }
 
-Power& operator* (int x, Power& op) {
-	Power
+Power operator* (int x, Power& op) {
+	Power tmp = op;
+	tmp.kick = tmp.kick * x;
+	tmp.punch = tmp.punch * x;
+	return tmp;
 }
 
-Power operator+ (Power& op1, Power& op2) {
+Power operator+ (Power op1, Power op2) {
 	Power tmp = op1;
 	tmp.kick = tmp.kick + op2.kick;
 	tmp.punch = tmp.punch + op2.punch;
