@@ -24,7 +24,7 @@
 
 `Complex(int real = 0, int img = 0);`
 
-- 디폴트 매개변수를 사용하여 실수부와 허수부를 초기화하는 생성자 선언
+- 디폴트 매개변수를 0으로 설정하고, 실수부와 허수부를 초기화하는 생성자 선언
 
 `Complex& operator++ ();`
 
@@ -52,11 +52,11 @@
 
 `if (img < 0) { cout << "복소수 " << this->real << this->img << "j 생성" << endl; }`
 
-- `img`가 0보다 작으면 음수 부호가 포함되므로 `+` 기호 없이 복소수 생성 메시지 출력
+- `img`가 0보다 `+` 기호 없이 복소수 출력
 
 `else{ cout << "복소수 " << this->real << "+" << this->img << "j 생성" << endl; }`
 
-- `img`가 0보다 크거나 같으면 `+` 기호와 함께 복소수 생성 메시지 출력
+- `img`가 0보다 크거나 같으면 `+` 기호와 함께 복소수 출력
 
 `void Complex::show() {`
 
@@ -72,7 +72,7 @@
 
 `Complex Complex::operator--(int x) {`
 
-- 후위 `--` 연산자 오버로딩 함수 구현부
+- 후위 `--` 연산자 함수 구현부
 
 `Complex tmp = -this;`
 
@@ -92,7 +92,7 @@
 
 `Complex& Complex::operator++() {`
 
-- 전위 `++` 연산자 오버로딩 함수 구현부
+- 전위 `++` 연산자 함수 구현부
 
 `real++;`
 
@@ -143,4 +143,5 @@
 - 0을 반환하고 `main` 함수를 종료한다.
 
 ## 실행결과
+<img width="1106" height="172" alt="image" src="https://github.com/user-attachments/assets/fe30e3c9-3b2d-47db-a5b7-d15d74a80c17" />
 
