@@ -44,7 +44,7 @@
 
 `tmp.kick = tmp.kick - x;`
 
-- 현재 객체의 `kick` 값에 `x`를 곱하여 저장
+- `tmp.kick` - `x`의 값을 `tmp.kick` 에 저장
 
 `tmp.punch = tmp.punch - x;`
 
