@@ -48,11 +48,11 @@
 
 `tmp.punch = tmp.punch - x;`
 
-- 현재 객체의 `punch` 값에 `x`를 곱하여 저장
+- `tmp.punch` - `x`의 값을 `tmp.punch` 에 저장
 
 `return tmp;`
 
-- 값이 바뀌기 전의 원본 상태인 `tmp` 객체를 반환한다.
+- `tmp` 객체 반환
 
 `void Power::show() {`
 
